@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/style.sass",
+        "../sass/_normalize.scss",
+        "../sass/blocks/_interface.sass",
+        "../sass/blocks/_navbar.sass"
+    ],
+    "names": [],
+    "file": "style.css"
+}
