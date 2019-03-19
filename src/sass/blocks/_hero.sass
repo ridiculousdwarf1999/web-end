@@ -91,7 +91,36 @@
       max-width: 420px 
 @media (max-width: 877px)
   .hero 
-    background
+    background-repeat: no-repeat  
+    background-size: cover 
+    padding-top: 75px 
+    padding-bottom: 60px 
     &-block 
       justify-content: center 
-      
+    &-text 
+      display: flex 
+      flex-direction: column 
+      align-items: center 
+      margin-bottom: 50px 
+    &__title 
+      text-align: center 
+@media (max-width: 380px)
+  .hero 
+    padding-top: 35px 
+    &-text
+      align-items: flex-start
+    &__title
+      font-size: 30px 
+      line-height: 35px 
+      text-align: left 
+      margin-bottom: 25px 
+    &__subtitle
+      text-align: left 
+      font-size: 18px 
+      margin-bottom: 30px 
+    &-form
+      padding: 30px 25px 0 25px 
+@media (max-width: 340px)
+  .hero 
+    &-form 
+      padding: 30px 20px 0 20px 
