@@ -1,9 +1,15 @@
 .navbar 
+  background-color: #e7e7e7
   &-block 
     display: flex 
     justify-content: space-between 
     align-items: center 
     padding-top: 12px 
+    padding-bottom: 10px 
+  &__menu
+    display: flex 
+    flex-wrap: wrap
+    border: 1px solid red 
   &__contacts 
     display: flex 
     flex-direction: column 
@@ -21,4 +27,25 @@
     color: #22bac1
     font-size: 14px
     font-weight: 400
+@media (max-width: 1200px)
+  .navbar 
+    &__menu 
+      flex-basis: 50%
+    &__link
+      margin-bottom: 5px 
+      &:nth-child(4)
+        margin-bottom: 0
+      &:nth-child(5)
+        margin-bottom: 0
+      &:nth-child(6)
+        margin-bottom: 0
+@media (max-width: 849px)
+  .navbar 
+    &__link
+      font-size: 12px 
+      margin-right: 25px 
+    &__phone
+      font-size: 15px 
+    &__back 
+      font-size: 12px 
     
