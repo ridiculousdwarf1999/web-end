@@ -37,10 +37,8 @@
       margin-bottom: 30px 
       max-width: 370px 
       transition: 0.2s
-      
       &:hover 
         box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1)
-        
         .offer-layouts__image
           filter: none 
         .offer-layouts__button
@@ -96,5 +94,54 @@
   margin-top: 33px 
 .button-lower
   margin-top: 94px 
-
-      
+@media (max-width: 1200px)
+  .offer 
+    &-layouts 
+      &__item 
+        flex-basis: 50%
+@media (max-width: 855px)
+  .offer 
+    &-layouts 
+      &__item 
+        max-width: 350px 
+@media (max-width: 800px)
+  .offer 
+    &-block 
+      padding-top: 50px 
+    &__title
+      font-size: 30px 
+      margin-bottom: 40px 
+    &__subtitle 
+      font-size: 18px 
+      text-align: center 
+      max-width: 250px 
+    &-layouts 
+      justify-content: center
+      &__item 
+        margin: 25px
+        margin-top: 0
+        max-width: 370px 
+        padding: 20px 5px 20px 5px 
+@media (max-width: 720px)
+  .offer 
+    &-picture
+      max-width: 280px 
+@media (max-width: 650px)
+  .offer 
+    &-picture
+      max-width: 270px  
+@media (max-width: 620px)
+  .offer 
+    &-picture
+      max-width: 260px
+@media (max-width: 380px)
+  .offer 
+    &-block
+      padding-top: 30px 
+    &__subtitle
+      margin-bottom: 35px 
+    &-picture
+      max-width: 240px     
+    &-layouts 
+      &__title 
+        font-size: 18px 
