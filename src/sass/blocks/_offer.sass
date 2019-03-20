@@ -1,0 +1,93 @@
+.offer 
+  &-block 
+    display: flex 
+    flex-direction: column 
+    align-items: center  
+    padding-top: 100px 
+  &__title 
+    margin-bottom: 70px 
+    position: relative 
+    font-size: 36px
+    font-weight: 400
+    &::after 
+      content: '' 
+      width: 30px 
+      height: 2px 
+      background-color: #23bac1
+      position: absolute 
+      right: 50%
+      margin-right: -15px 
+      bottom: -25px 
+  &__subtitle
+    display: block 
+    font-size: 20px
+    font-weight: 300
+    margin-bottom: 89px 
+  &-layouts
+    display: flex 
+    justify-content: space-between 
+    flex-wrap: wrap
+    &__item 
+      flex-basis: 33%
+      display: flex 
+      flex-direction: column 
+      align-items: center 
+      padding-top: 33px
+      padding-bottom: 40px  
+      margin-bottom: 30px 
+      border: 1px solid black 
+      max-width: 370px 
+      transition: 0.2s
+      &:hover 
+        box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1)
+        border: none 
+    &__text
+      display: flex 
+      flex-direction: column
+      align-items: center 
+      margin-bottom: 30px 
+    &__point 
+      position: relative 
+      font-size: 16px
+      font-weight: 300
+      margin-bottom: 10px 
+      &::after 
+        content: '' 
+        position: absolute
+        width: 10px 
+        height: 2px 
+        right: 50%
+        margin-right: -5px 
+        bottom: -6px 
+        background-color: #23bac1 
+      &:last-child
+        &::after 
+          display: none 
+    &__title
+      text-align: center
+      font-size: 20px
+      font-weight: 400
+      margin-bottom: 24px 
+    &__image 
+      margin-bottom: 35px 
+      filter: grayscale(100%)
+    &__paragraph  
+      max-width: 235px 
+      text-align: center 
+      font-size: 16px
+      font-weight: 300
+      line-height: 21px
+    &__button 
+      width: 230px 
+      height: 55px 
+      border: 1px solid rgba(174, 174, 174, 0.2)
+      background-color: #ffffff
+      font-size: 13px
+      font-weight: 400
+      text-transform: uppercase
+.button-low
+  margin-top: 28px 
+.button-lower
+  margin-top: 59px 
+
+      

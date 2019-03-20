@@ -26,6 +26,10 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  margin: 0;
+}
+
 ul {
   margin: 0;
 }
@@ -36,6 +40,10 @@ strong {
 
 button {
   cursor: pointer;
+}
+
+img {
+  display: block;
 }
 
 .navbar {
@@ -83,6 +91,12 @@ button {
   color: #000;
   font-size: 14px;
   font-weight: 400;
+  text-decoration: underline;
+}
+
+.navbar__link:hover {
+  color: #404044;
+  text-decoration: none;
 }
 
 .navbar__phone {
@@ -91,10 +105,20 @@ button {
   font-weight: 700;
 }
 
+.navbar__phone:hover {
+  color: #404044;
+}
+
 .navbar__back {
   color: #22bac1;
   font-size: 14px;
   font-weight: 400;
+  text-decoration: underline;
+}
+
+.navbar__back:hover {
+  color: #33cfd6;
+  text-decoration: none;
 }
 
 @media (max-width: 1200px) {
@@ -320,6 +344,10 @@ button {
   margin-bottom: 40px;
 }
 
+.hero-form__button:hover {
+  background-color: #27c7ce;
+}
+
 .except {
   max-width: 140px;
 }
@@ -391,5 +419,158 @@ button {
   .hero-form {
     padding: 30px 20px 0 20px;
   }
+}
+
+.offer-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 100px;
+}
+
+.offer__title {
+  margin-bottom: 70px;
+  position: relative;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.offer__title::after {
+  content: '';
+  width: 30px;
+  height: 2px;
+  background-color: #23bac1;
+  position: absolute;
+  right: 50%;
+  margin-right: -15px;
+  bottom: -25px;
+}
+
+.offer__subtitle {
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 89px;
+}
+
+.offer-layouts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.offer-layouts__item {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 33px;
+  padding-bottom: 40px;
+  margin-bottom: 30px;
+  border: 1px solid black;
+  max-width: 370px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.offer-layouts__item:hover {
+  -webkit-box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.offer-layouts__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.offer-layouts__point {
+  position: relative;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.offer-layouts__point::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  right: 50%;
+  margin-right: -5px;
+  bottom: -6px;
+  background-color: #23bac1;
+}
+
+.offer-layouts__point:last-child::after {
+  display: none;
+}
+
+.offer-layouts__title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.offer-layouts__image {
+  margin-bottom: 35px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.offer-layouts__paragraph {
+  max-width: 235px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+.offer-layouts__button {
+  width: 230px;
+  height: 55px;
+  border: 1px solid rgba(174, 174, 174, 0.2);
+  background-color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.button-low {
+  margin-top: 28px;
+}
+
+.button-lower {
+  margin-top: 59px;
 }
 /*# sourceMappingURL=style.css.map */
