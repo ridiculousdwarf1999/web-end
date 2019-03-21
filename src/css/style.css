@@ -6,6 +6,7 @@
 
 body {
   margin: 0;
+  font-family: 'Proxima Nova Light', sans-serif;
 }
 
 .container {
@@ -20,14 +21,17 @@ a {
 
 h1 {
   margin: 0;
+  font-family: 'Proxima Nova Regular', sans-serif;
 }
 
 h2 {
   margin: 0;
+  font-family: 'Proxima Nova Regular', sans-serif;
 }
 
 h3 {
   margin: 0;
+  font-family: 'Proxima Nova Regular', sans-serif;
 }
 
 ul {
@@ -668,5 +672,23 @@ img {
   .offer-layouts__title {
     font-size: 18px;
   }
+}
+
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: url("../fonts/ProximaNova/ProximaNova-Light.eot");
+  src: url("../fonts/ProximaNova/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNoval/ProximaNova-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url("../fonts/ProximaNova/ProximaNova-Regular.eot");
+  src: url("../fonts/ProximaNova/ProximaNova-Regular?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 /*# sourceMappingURL=style.css.map */
