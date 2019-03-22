@@ -207,6 +207,86 @@
     </section>
     <!-- /.offer -->
 
+    <section class="portfolio">
+      <div class="container">
+        <div class="portfolio-block">
+          <h2 class="portfolio__title">
+            Реализованные проекты
+          </h2>
+          <span class="portfolio__subtitle">
+            Более 100 компаний уже решают свои бизнес – задачи с помощью наших макетов
+          </span>
+          <div class="slider-arrows">
+            <div class="arrow-left">
+              <img src="img/portfolio/arrow-left.png" alt="Left arrow">
+            </div>
+            <div class="slider">
+              <div class="slider-block">
+                <div class="slider__image">
+                  <img src="img/portfolio/slider-img.png" alt="Порт Артек">
+                </div>
+                <div class="slider__text">
+                  <h3 class="slider__title">Порт Артек</h3>
+                  <span class="slider__description">Описание:</span>
+                  <span class="slider__subtitle">
+                    Презентация порта Артек для первых лиц государства
+                  </span>
+                  <div class="slider__chars">
+                    <div class="slider__char">
+                      <span class="slider__char__head">Масштаб:</span>
+                      <strong class="slider__char__body">1:200</strong>
+                    </div>
+                    <div class="slider__char">
+                      <span class="slider__char__head">Размер::</span>
+                      <strong class="slider__char__body">1000х2000</strong>
+                    </div>
+                    <div class="slider__char">
+                      <span class="slider__char__head">Срок изготовления::</span>
+                      <strong class="slider__char__body">40 дней</strong>
+                    </div>
+                  </div>
+                  <button class="slider__button">Заказать макет</button>
+                </div>
+              </div>
+              <div class="slider-block">
+                <div class="slider__image">
+                  <img src="img/portfolio/slider-second.png" alt="Домик">
+                </div>
+                <div class="slider__text">
+                  <h3 class="slider__title">Порт Артек</h3>
+                  <span class="slider__description">Описание:</span>
+                  <span class="slider__subtitle">
+                    Презентация порта Артек для первых лиц государства
+                  </span>
+                  <div class="slider__chars">
+                    <div class="slider__char">
+                      <span class="slider__char__head">Масштаб:</span>
+                      <strong class="slider__char__body">1:200</strong>
+                    </div>
+                    <div class="slider__char">
+                      <span class="slider__char__head">Размер::</span>
+                      <strong class="slider__char__body">1000х2000</strong>
+                    </div>
+                    <div class="slider__char">
+                      <span class="slider__char__head">Срок изготовления::</span>
+                      <strong class="slider__char__body">40 дней</strong>
+                    </div>
+                  </div>
+                  <button class="slider__button">Заказать макет</button>
+                </div>
+              </div>
+            </div>
+            <div class="arrow-right">
+              <img src="img/portfolio/arrow-right.png" alt="Right arrow">
+            </div>
+          </div>
+        </div>
+        <!-- /.portfolio-block -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.portfolio -->
+
   </main>
 
   <div class="modal" id="modal">
@@ -220,6 +300,15 @@
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/modal.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.slider').slick({
+        prevArrow: ('.arrow-left'),
+        nextArrow: ('.arrow-right')
+      })
+    });
+  </script>
 
 </body>
 </html>
