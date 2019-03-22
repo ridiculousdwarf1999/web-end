@@ -1,11 +1,13 @@
 .portfolio
+  background-color: #f6f6f6
   &-block 
     display: flex 
     flex-direction: column 
     align-items: center 
-    padding-top: 96px 
+    padding-top: 100px 
+    padding-bottom: 100px 
   &__title 
-    margin-bottom: 70px 
+    margin-bottom: 60px 
     position: relative 
     font-size: 36px
     font-weight: 400
@@ -14,7 +16,7 @@
       position: absolute 
       width: 30px 
       height: 2px 
-      bottom: -28px
+      bottom: -26px
       left: 50%
       margin-left: -15px
       background-color: #23bac1
@@ -24,7 +26,7 @@
     font-weight: 300
 .slider 
   margin: 0 auto 
-  max-width: 900px
+  max-width: 915px
   overflow: hidden 
   &-arrows
     display: flex 
@@ -33,31 +35,32 @@
     display: flex !important 
     justify-content: space-between 
     align-items: flex-end 
+    margin: 0 20px 
   &__title 
     font-size: 24px
     font-weight: 400
-    margin-bottom: 40px 
+    margin-bottom: 44px 
   &__description
     display: block 
     font-size: 12px
     font-weight: 300
-    margin-bottom: 18px 
+    margin-bottom: 14px 
   &__subtitle
     display: block 
     font-size: 16px
     font-weight: 300
-    margin-bottom: 50px 
+    margin-bottom: 54px 
   &__chars
     display: flex !important 
     justify-content: space-between 
-    margin-bottom: 51px 
+    margin-bottom: 59px 
   &__char 
     display: flex !important 
     flex-direction: column 
     &__head 
       font-size: 12px
       font-weight: 300
-      margin-bottom: 18px 
+      margin-bottom: 10px 
     &__body 
       font-size: 16px
   &__button 
@@ -72,8 +75,104 @@
     &:hover 
       background-color: #27c7ce
 .arrow-left
-  margin-right: 30px 
+  margin-right: 120px 
 .arrow-right 
-  margin-left: 30px 
- 
-    
+  margin-left: 120px 
+@media (max-width: 1200px)
+  .arrow-left 
+    margin-right: 40px 
+  .arrow-right 
+    margin-left: 40px 
+@media (max-width: 1043px)
+  .arrow-left 
+    margin-right: 30px 
+  .arrow-right 
+    margin-left: 30px 
+  .slider 
+    &-block 
+      max-width: 905px
+@media (max-width: 1015px)
+  .arrow-left 
+    margin-right: 5px 
+  .arrow-right 
+    margin-left: 5px 
+  .slider 
+    &-block 
+      max-width: 870px 
+@media (max-width: 992px)
+  .portfolio
+    &-block 
+      padding-bottom: 50px 
+      padding-top: 50px 
+    &__subtitle
+      margin-bottom: 50px 
+      font-size: 16px 
+      text-align: center
+  .slider 
+    max-width: 450px 
+    &-block 
+      flex-direction: column
+      align-items: center 
+      border: 1px solid black 
+    &__image 
+      margin-bottom: 20px 
+    &__text 
+      margin-left: -6px 
+    &__title
+      margin-bottom: 25px 
+    &__subtitle 
+      margin-bottom 35px 
+    &__chars 
+      margin-bottom: 30px 
+@media (max-width: 800px)
+  .portfolio
+    &__title
+      font-size: 30px 
+@media (max-width: 522px)
+  .slider 
+    max-width: 392px 
+    &__image
+      img 
+        max-width: 350px 
+    &__text 
+      width: 100%
+      margin-left: 0
+      padding-left: 8px 
+    &__subtitle
+      max-width: 200px 
+    &__chars 
+      flex-direction: column 
+    &__char 
+      margin-bottom: 10px 
+      &__head
+        margin-bottom: 7px 
+    &__button 
+      margin-left: 57px 
+@media (max-width: 452px)
+  .arrow-left
+    display: none !important 
+  .arrow-right 
+    display: none !important
+  .slider 
+    max-width: 342px
+    &__image 
+      img 
+        max-width: 300px 
+    &__subtitle 
+      margin-bottom: 30px 
+    &__button
+      margin-left: 35px 
+@media (max-width: 381px)
+  .portfolio
+    &__title 
+      font-size: 24px 
+    &__subtitle
+      text-align: left 
+@media (max-width: 341px)
+  .slider 
+    max-width: 320px 
+    &__image
+      img 
+        max-width: 278px 
+    &__button
+      margin-left: 23px 
