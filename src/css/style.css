@@ -152,6 +152,10 @@ img {
   display: block;
 }
 
+iframe {
+  width: 100%;
+}
+
 @media (max-width: 992px) {
   button:hover {
     background-color: none;
