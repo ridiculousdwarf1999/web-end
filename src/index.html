@@ -81,14 +81,14 @@
             </ul>
           </div>
           <!-- /.hero__text -->
-          <form action="#" class="hero-form">
+          <form action="#" class="hero-form" id="hero-form">
             <h3 class="hero-form__title">
             Оставьте заявку и получите расчет стоимость макета 
             в течение <strong>30 минут</strong>
             </h3>
-            <input type="text" class="hero-form__input" placeholder="Ваше имя">
-            <input type="tel" class="hero-form__input" placeholder="Контактный телефон">
-            <input type="email" class="hero-form__input" placeholder="Электронная почта">
+            <input type="text" name="username" class="hero-form__input" placeholder="Ваше имя">
+            <input type="tel" name="phone" class="hero-form__input phone" placeholder="Контактный телефон">
+            <input type="email" name="email"class="hero-form__input" placeholder="Электронная почта">
             <button class="hero-form__button">Оставить заявку</button>
           </form>
           <!-- /.hero__form -->
@@ -424,6 +424,8 @@
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/modal.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
   <script>
     $(document).ready(function() {
       $('.slider').slick({
@@ -466,6 +468,33 @@
           }
         ]
       });
+      $('#hero-form').validate({
+        rules: {
+          username:{
+            required: true,
+            minlength: 2,
+            maxlength: 15
+          },
+          email:{
+            required: true,
+            email: true
+          },
+          phone: "required"
+        },
+        messages: {
+          username: {
+            required: "Укажите имя",
+            minlength: jQuery.validator.format("Осталось символов: {0}"),
+            maxlength: jQuery.validator.format("Не больше 15 символов")
+          },
+          email: {
+            required: jQuery.validator.format("Нам нужен ваш email"),
+            email: jQuery.validator.format("Пожалуйста,введите ваш настоящий email")
+          },
+          phone: "Укажите ваш номер телефона"
+        }
+      });
+      $('.phone').mask('8 (999) 999-99-99')
     });
   </script>
 
