@@ -1,0 +1,28 @@
+{
+  "name": "web-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-tinypng-compress": "^1.2.1"
+  },
+  "devDependencies": {
+    "gulp-clean-css": "^4.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ridiculousdwarf1999/web-end.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ridiculousdwarf1999/web-end/issues"
+  },
+  "homepage": "https://github.com/ridiculousdwarf1999/web-end#readme"
+}
