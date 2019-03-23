@@ -121,6 +121,11 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
 h1 {
   margin: 0;
   font-family: 'Proxima Nova Regular', sans-serif;
@@ -148,6 +153,11 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
 img {
   display: block;
 }
@@ -167,6 +177,20 @@ label {
 
 #username-error, #email-error, #phone-error {
   border: none;
+}
+
+@media (min-width: 1644px) {
+  .offer-layouts__item {
+    min-width: 33%;
+  }
+  .hero-block {
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+  }
+  .footer-block {
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+  }
 }
 
 @media (max-width: 992px) {
@@ -730,6 +754,10 @@ label {
 }
 
 @media (max-width: 1200px) {
+  .offer-layouts {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
   .offer-layouts__item {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
@@ -737,6 +765,11 @@ label {
 }
 
 @media (max-width: 855px) {
+  .offer-layouts {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .offer-layouts__item {
     max-width: 350px;
   }
