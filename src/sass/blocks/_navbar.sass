@@ -4,8 +4,8 @@
     display: flex 
     justify-content: space-between 
     align-items: center 
-    padding-top: 12px 
-    padding-bottom: 10px 
+    padding-top: 6px 
+    padding-bottom: 12px 
   &__menu
     display: flex 
     flex-wrap: wrap 
@@ -37,6 +37,8 @@
     &:hover 
       color: #33cfd6
       text-decoration: none 
+.phone-menu
+  display: none
 @media (max-width: 1200px)
   .navbar 
     &__menu 
@@ -54,19 +56,27 @@
   .navbar 
     &__menu 
       flex-basis: 40%
-@media (max-width: 520px)
+@media (max-width: 500px) 
   .navbar 
+    background-image: url('../img/hero/hero-bg.png') 
+    background-size: contain 
     &-block 
-      flex-direction: column 
-    &__menu 
-      justify-content: center 
-      margin-bottom: 5px 
-    &__contacts 
       align-items: center 
+    &__menu 
+      display: none
+    &__phone
+      color: #ffffff 
+  .phone-menu
+    display: flex 
+    align-items: center 
+    &__image 
+      margin-right: 17px 
+    &__text 
+      color: #ffffff
+      font-size: 14px
+      font-weight: 400 
 @media (max-width: 380px)
   .navbar 
-    &-block 
-      align-items: flex-start 
     &__menu 
       justify-content: flex-start 
     &__link 

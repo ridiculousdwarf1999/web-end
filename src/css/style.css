@@ -113,7 +113,7 @@ body {
 
 .container {
   max-width: 1920px;
-  width: 90%;
+  width: 87%;
   margin: 0 auto;
 }
 
@@ -203,8 +203,8 @@ label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 12px;
-  padding-bottom: 10px;
+  padding-top: 6px;
+  padding-bottom: 12px;
 }
 
 .navbar__menu {
@@ -264,6 +264,10 @@ label {
   text-decoration: none;
 }
 
+.phone-menu {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .navbar__menu {
     -ms-flex-preferred-size: 55%;
@@ -291,32 +295,41 @@ label {
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 500px) {
+  .navbar {
+    background-image: url("../img/hero/hero-bg.png");
+    background-size: contain;
+  }
   .navbar-block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .navbar__menu {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 5px;
-  }
-  .navbar__contacts {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
+  .navbar__menu {
+    display: none;
+  }
+  .navbar__phone {
+    color: #ffffff;
+  }
+  .phone-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .phone-menu__image {
+    margin-right: 17px;
+  }
+  .phone-menu__text {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+  }
 }
 
 @media (max-width: 380px) {
-  .navbar-block {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
   .navbar__menu {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -354,7 +367,7 @@ label {
   background: url("../img/hero/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 125px;
+  padding-top: 112px;
   padding-bottom: 100px;
 }
 
@@ -375,7 +388,7 @@ label {
   font-weight: 400;
   color: #fffafa;
   max-width: 510px;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
 }
 
 .hero__subtitle {
@@ -383,7 +396,7 @@ label {
   font-size: 20px;
   font-weight: 300;
   color: #fffafa;
-  margin-bottom: 63px;
+  margin-bottom: 60px;
 }
 
 .hero-list {
@@ -413,7 +426,7 @@ label {
   font-size: 15px;
   font-weight: 300;
   color: #ffffff;
-  max-width: 200px;
+  max-width: 250px;
 }
 
 .hero-list__counter {
@@ -453,6 +466,8 @@ label {
           align-items: center;
   padding: 30px 55px 0 55px;
   background-color: #ffffff;
+  max-height: 429px;
+  margin-top: 12px;
 }
 
 .hero-form__title {
@@ -463,6 +478,7 @@ label {
   max-width: 250px;
   text-align: center;
   margin-bottom: 28px;
+  margin-top: 5px;
 }
 
 .hero-form__input {
@@ -495,6 +511,10 @@ label {
 
 .except {
   max-width: 140px;
+}
+
+#except {
+  max-width: 200px;
 }
 
 @media (max-width: 1200px) {
@@ -590,6 +610,7 @@ label {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 92px;
+  padding-bottom: 3px;
 }
 
 .offer__title {
@@ -643,7 +664,7 @@ label {
           align-items: center;
   padding-top: 33px;
   padding-bottom: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   max-width: 370px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -679,13 +700,13 @@ label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .offer-layouts__point {
   position: relative;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 15px;
 }
 
@@ -708,11 +729,11 @@ label {
   text-align: center;
   font-size: 20px;
   font-weight: 400;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
 }
 
 .offer-layouts__image {
-  margin-bottom: 35px;
+  margin-bottom: 31px;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }
@@ -740,7 +761,15 @@ label {
 }
 
 .button-lower {
-  margin-top: 94px;
+  margin-top: 119px;
+}
+
+#landscape {
+  margin-right: -33px;
+}
+
+#layout-image-6 {
+  margin-bottom: 18px;
 }
 
 @media (max-width: 1200px) {
@@ -899,7 +928,7 @@ label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 100px;
+  padding-top: 90px;
   padding-bottom: 100px;
 }
 
