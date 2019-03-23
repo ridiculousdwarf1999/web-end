@@ -21,12 +21,12 @@
       margin-left: -15px
       background-color: #23bac1
   &__subtitle
-    margin-bottom: 100px 
+    margin-bottom: 98px 
     font-size: 20px
     font-weight: 300
 .slider 
   margin: 0 auto 
-  max-width: 915px
+  max-width: 945px
   overflow: hidden 
   &-arrows
     display: flex 
@@ -36,6 +36,8 @@
     justify-content: space-between 
     align-items: flex-end 
     margin: 0 20px 
+  &__text 
+    margin-right: 8px 
   &__title 
     font-size: 24px
     font-weight: 400
@@ -64,8 +66,9 @@
     &__body 
       font-size: 16px
   &__button 
-    font-size: 13px
+    font-size: 12px
     font-weight: 400
+    letter-spacing: 0.33px
     text-transform: uppercase
     color: #ffffff
     background-color: #23bac1
@@ -74,11 +77,15 @@
     border: none 
     &:hover 
       background-color: #27c7ce
+#char-2 
+  margin-left: 15px 
 .arrow-left
-  margin-right: 120px 
+  margin-right: 100px 
 .arrow-right 
-  margin-left: 120px 
+  margin-left: 100px 
 @media (max-width: 1200px)
+  .slider 
+    max-width: 915px 
   .arrow-left 
     margin-right: 40px 
   .arrow-right 
@@ -147,6 +154,10 @@
         margin-bottom: 7px 
     &__button 
       margin-left: 57px 
+  #char-2 
+    margin-left: 0
+  #char-3
+    margin-right: 0 
 @media (max-width: 452px)
   .arrow-left
     display: none !important 

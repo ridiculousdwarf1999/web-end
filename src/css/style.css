@@ -951,14 +951,14 @@ label {
 }
 
 .portfolio__subtitle {
-  margin-bottom: 100px;
+  margin-bottom: 98px;
   font-size: 20px;
   font-weight: 300;
 }
 
 .slider {
   margin: 0 auto;
-  max-width: 915px;
+  max-width: 945px;
   overflow: hidden;
 }
 
@@ -982,6 +982,10 @@ label {
       -ms-flex-align: end;
           align-items: flex-end;
   margin: 0 20px;
+}
+
+.slider__text {
+  margin-right: 8px;
 }
 
 .slider__title {
@@ -1035,8 +1039,9 @@ label {
 }
 
 .slider__button {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 400;
+  letter-spacing: 0.33px;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #23bac1;
@@ -1049,15 +1054,22 @@ label {
   background-color: #27c7ce;
 }
 
+#char-2 {
+  margin-left: 15px;
+}
+
 .arrow-left {
-  margin-right: 120px;
+  margin-right: 100px;
 }
 
 .arrow-right {
-  margin-left: 120px;
+  margin-left: 100px;
 }
 
 @media (max-width: 1200px) {
+  .slider {
+    max-width: 915px;
+  }
   .arrow-left {
     margin-right: 40px;
   }
@@ -1161,6 +1173,12 @@ label {
   }
   .slider__button {
     margin-left: 57px;
+  }
+  #char-2 {
+    margin-left: 0;
+  }
+  #char-3 {
+    margin-right: 0;
   }
 }
 
