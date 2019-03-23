@@ -30,6 +30,7 @@
       margin-bottom: 0
     &:nth-child(8)
       margin-bottom: 0
+      padding-top: 4px 
     &:nth-child(3)
       padding-top: 10px 
   &__image 
@@ -48,3 +49,59 @@
   max-width: 160px 
 .text-4 
   max-width: 190px 
+@media (max-width: 1073px)
+  .goals 
+    &__text 
+      font-size: 13px 
+@media (max-width: 973px)
+  .goal 
+    background-repeat: no-repeat 
+    background-size: cover 
+    .goals 
+      &__item 
+        flex-basis: 33%
+        &:nth-child(7)
+          flex-basis: 50%
+        &:last-child
+          flex-basis: 50%
+      &__text 
+        max-width: 225px 
+@media (max-width: 793px)
+  .goal 
+    &-block 
+      padding-top: 50px 
+      padding-bottom: 50px 
+    &__title 
+      font-size: 18px  
+  .goals 
+    &__item 
+      flex-basis: 50% !important
+      margin-bottom: 45px 
+      &:nth-child(5)
+        margin-bottom: 45px
+      &:nth-child(6)
+        margin-bottom: 45px 
+@media (max-width: 548px)
+  .goal 
+    &__title 
+      font-size: 16px 
+      text-align: left 
+      line-height: 20px 
+  .goals 
+    &__text 
+      font-size: 12px 
+      max-width :210px !important
+@media (max-width: 487px)
+  .goal 
+    &__title 
+      margin-bottom: 30px 
+  .goals  
+    &__item
+      flex-basis: 100% !important
+      &:nth-child(7)
+        margin-bottom: 45px
+@media (max-width: 340px)
+  .goal 
+    &__title 
+      font-size: 14px 
+      line-height: 18px 
