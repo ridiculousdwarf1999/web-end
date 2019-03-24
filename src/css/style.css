@@ -1441,6 +1441,12 @@ label {
   .goals__item:nth-child(7) {
     margin-bottom: 45px;
   }
+  .image-2, .image-3, .image-4, .image-6, .image-7, .image-8 {
+    margin-right: 0;
+  }
+  .text-2, .text-3, .text-4, .text-7, .text-8 {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 340px) {
