@@ -42,7 +42,7 @@ gulp.task('admin', function(done) {
 });
 
 gulp.task('tinypng', function (done) {
-  gulp.src('./src/img/**/*.{png,jpg,jpeg}')
+  gulp.src('./src/img/**/*.{png,jpg,jpeg,ico}')
       .pipe(tinypng({
           key: 'prnsWXpHlxGJshBMSgPSGSN7fWtjmNVQ',
       }))
