@@ -189,7 +189,7 @@ label {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 550px) {
   .large-block {
     background-image: url("../img/hero/hero-bg.png");
   }
@@ -296,15 +296,15 @@ label {
 
 @media (max-width: 713px) {
   .navbar__menu {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
   }
   .navbar__link {
     margin-right: 15px;
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 550px) {
   .navbar {
     background: none;
   }
@@ -558,7 +558,7 @@ label {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 550px) {
   .hero {
     background: none;
   }
