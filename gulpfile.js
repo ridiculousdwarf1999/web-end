@@ -35,6 +35,12 @@ gulp.task('fonts', function(done) {
   done();
 });
 
+gulp.task('admin', function(done) {
+  gulp.src('./src/admin/*')
+  .pipe(gulp.dest('./dist/admin/'))
+  done();
+});
+
 gulp.task('tinypng', function (done) {
   gulp.src('./src/img/**/*.{png,jpg,jpeg}')
       .pipe(tinypng({
@@ -44,7 +50,7 @@ gulp.task('tinypng', function (done) {
       done();
 });
 
-gulp.task('default', gulp.parallel('minify-css', 'move-js', 'fonts', 'htmlmin', 'tinypng', function(done) {
+gulp.task('default', gulp.parallel('minify-css', 'move-js', 'fonts', 'htmlmin', 'admin', 'tinypng', function(done) {
   // do more stuff
   done();
 }));
