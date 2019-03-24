@@ -189,6 +189,12 @@ label {
   }
 }
 
+@media (max-width: 500px) {
+  .large-block {
+    background-image: url("../img/hero/hero-bg.png");
+  }
+}
+
 .navbar {
   background-color: #e7e7e7;
 }
@@ -297,8 +303,7 @@ label {
 
 @media (max-width: 500px) {
   .navbar {
-    background-image: url("../img/hero/hero-bg.png");
-    background-size: contain;
+    background: none;
   }
   .navbar-block {
     -webkit-box-align: center;
@@ -552,6 +557,12 @@ label {
   }
   .hero__title {
     text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    background: none;
   }
 }
 
