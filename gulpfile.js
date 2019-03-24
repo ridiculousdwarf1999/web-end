@@ -42,12 +42,12 @@ gulp.task('admin', function(done) {
 });
 
 gulp.task('tinypng', function (done) {
-  gulp.src('./src/img/**/*.{png,jpg,jpeg,ico}')
-      .pipe(tinypng({
-          key: 'prnsWXpHlxGJshBMSgPSGSN7fWtjmNVQ',
-      }))
-      .pipe(gulp.dest('dist/img/'));
-      done();
+  gulp.src('./src/img/**/*.{png,jpg,jpeg}')
+  .pipe(tinypng({
+    key: 'prnsWXpHlxGJshBMSgPSGSN7fWtjmNVQ',
+  }))
+  .pipe(gulp.dest('dist/img/'));
+  done();
 });
 
 gulp.task('default', gulp.parallel('minify-css', 'move-js', 'fonts', 'htmlmin', 'admin', 'tinypng', function(done) {
