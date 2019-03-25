@@ -104,6 +104,8 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   outline: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 body {
@@ -158,20 +160,27 @@ iframe {
 
 label {
   max-width: 250px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  margin-top: -8px;
+  text-align: center;
 }
 
 .error {
   border: 1px solid red;
 }
 
-#username-error, #email-error, #phone-error {
+#username-error, #email-error, #phone-error, #username1-error, #phone1-error {
   border: none;
 }
 
 @media (min-width: 1644px) {
   .offer-layouts__item {
     min-width: 33%;
+  }
+  .navbar-block {
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+    padding: 0 40px;
   }
   .hero-block {
     -ms-flex-pack: distribute !important;
@@ -184,14 +193,12 @@ label {
 }
 
 @media (max-width: 992px) {
-  button:hover {
+  *:hover {
     background-color: none;
   }
-}
-
-@media (max-width: 550px) {
   .large-block {
     background-image: url("../img/hero/hero-bg.png");
+    background-size: cover;
   }
 }
 
@@ -304,7 +311,7 @@ label {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 992px) {
   .navbar {
     background: none;
   }
@@ -320,6 +327,15 @@ label {
     color: #ffffff;
   }
   .phone-menu {
+    position: relative;
+    list-style: none;
+    padding-left: 0;
+    display: block;
+  }
+  .phone-menu:hover .inner-list {
+    display: block;
+  }
+  .phone-menu__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -334,6 +350,23 @@ label {
     color: #ffffff;
     font-size: 14px;
     font-weight: 400;
+  }
+  .inner-list {
+    display: none;
+    list-style: none;
+    padding-left: 0;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #101011;
+    width: 288px;
+    border-radius: 5px;
+  }
+  .inner-list__item {
+    margin-bottom: 5px;
+  }
+  .inner-list__link {
+    color: #fff;
   }
 }
 
@@ -469,7 +502,6 @@ label {
           align-items: center;
   padding: 30px 55px 0 55px;
   background-color: #ffffff;
-  max-height: 429px;
   margin-top: 12px;
 }
 
@@ -528,7 +560,13 @@ label {
   }
 }
 
-@media (max-width: 877px) {
+@media (max-width: 992px) {
+  .hero {
+    background: none;
+  }
+}
+
+@media (max-width: 908px) {
   .hero {
     background-repeat: no-repeat;
     background-size: cover;
@@ -558,9 +596,9 @@ label {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 500px) {
   .hero {
-    background: none;
+    padding-top: 50px;
   }
 }
 
@@ -794,6 +832,17 @@ label {
 
 #landscape {
   margin-right: 0;
+}
+
+@media (max-width: 992px) {
+  .offer-layouts__image {
+    -webkit-filter: none;
+            filter: none;
+  }
+  .offer-layouts__button {
+    background-color: #23bac1;
+    color: #fff;
+  }
 }
 
 @media (max-width: 855px) {
@@ -1073,10 +1122,12 @@ label {
 
 .arrow-left {
   margin-right: 100px;
+  cursor: pointer;
 }
 
 .arrow-right {
   margin-left: 100px;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
@@ -1197,16 +1248,16 @@ label {
 
 @media (max-width: 452px) {
   .arrow-left {
-    display: none !important;
+    margin-right: 0;
   }
   .arrow-right {
-    display: none !important;
+    margin-left: 0;
   }
   .slider {
     max-width: 342px;
   }
   .slider__image img {
-    max-width: 300px;
+    max-width: 100%;
   }
   .slider__subtitle {
     margin-bottom: 30px;
@@ -1222,18 +1273,34 @@ label {
   }
   .portfolio__subtitle {
     text-align: left;
+    font-size: 14px;
+  }
+  .portfolio .slider {
+    max-width: 320px;
+  }
+  .portfolio .slider-block {
+    margin: 0 5px !important;
+  }
+  .portfolio .slider__button {
+    margin-left: 40px;
   }
 }
 
-@media (max-width: 341px) {
+@media (max-width: 362px) {
   .slider {
-    max-width: 320px;
-  }
-  .slider__image img {
-    max-width: 278px;
+    max-width: 300px !important;
   }
   .slider__button {
-    margin-left: 23px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 340px) {
+  .slider {
+    max-width: 280px !important;
+  }
+  .slider__button {
+    margin-left: 30px !important;
   }
 }
 
@@ -1501,10 +1568,12 @@ label {
 
 .left-arrow {
   margin-right: 45px;
+  cursor: pointer;
 }
 
 .right-arrow {
   margin-left: 45px;
+  cursor: pointer;
 }
 
 .client-1 {

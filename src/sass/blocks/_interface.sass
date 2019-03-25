@@ -1,6 +1,7 @@
 *
   box-sizing: border-box 
   outline: none 
+  transition: all 0.5s ease 
 body 
   margin: 0
   font-family: 'Proxima Nova Light', sans-serif
@@ -31,22 +32,27 @@ iframe
   width: 100%
 label
   max-width: 250px
-  margin-bottom: 5px 
+  margin-bottom: 10px 
+  margin-top: -8px
+  text-align: center
 .error 
   border: 1px solid red 
-#username-error, #email-error, #phone-error
+#username-error, #email-error, #phone-error, #username1-error, #phone1-error
   border: none 
 @media (min-width: 1644px)
   .offer-layouts__item 
     min-width: 33%
+  .navbar-block
+    justify-content: space-around !important
+    padding: 0 40px 
   .hero-block 
     justify-content: space-around !important
   .footer-block 
     justify-content: space-around !important 
 @media (max-width: 992px)
-  button:hover 
+  *:hover 
     background-color: none 
-@media (max-width: 550px)
   .large-block 
     background-image: url('../img/hero/hero-bg.png')
+    background-size: cover 
     

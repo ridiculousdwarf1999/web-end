@@ -58,7 +58,7 @@
       flex-basis: 40%
     &__link 
       margin-right: 15px 
-@media (max-width: 550px) 
+@media (max-width: 992px) 
   .navbar 
     background: none 
     &-block 
@@ -67,15 +67,37 @@
       display: none
     &__phone
       color: #ffffff 
-  .phone-menu
-    display: flex 
-    align-items: center 
+  .phone-menu 
+    position: relative 
+    list-style: none 
+    padding-left: 0 
+    display: block 
+    &:hover 
+      .inner-list
+        display: block  
+    &__item
+      display: flex 
+      align-items: center
     &__image 
       margin-right: 17px 
     &__text 
       color: #ffffff
       font-size: 14px
       font-weight: 400 
+  .inner-list 
+    display: none 
+    list-style: none 
+    padding-left: 0 
+    position: absolute 
+    top: 30px 
+    left: 0 
+    background-color: #101011
+    width: 288px 
+    border-radius: 5px 
+    &__item
+      margin-bottom: 5px
+    &__link 
+      color: #fff 
 @media (max-width: 380px)
   .navbar 
     &__menu 

@@ -35,10 +35,21 @@
             <a href="#clients" class="navbar__link">Наши клиенты</a>
             <a href="#footer" class="navbar__link">Контакты</a>
           </div>
-          <div class="phone-menu">
-            <div class="phone-menu__image"><img src="img/navbar/phone-menu.png" alt="Phone menu"></div>
-            <span class="phone-menu__text">МЕНЮ</span>
-          </div>
+          <ul class="phone-menu">
+            <li class="phone-menu__item">
+              <div class="phone-menu__image">
+                <img src="img/navbar/phone-menu.png" alt="phone-menu">
+              </div>
+              <span class="phone-menu__text">МЕНЮ</span>
+              <ul class="inner-list">
+                <li class="inner-list__item"><a href="#offer" class="inner-list__link">Виды макетов</a></li>
+                <li class="inner-list__item"><a href="#goal" class="inner-list__link">Комплектация макетов</a></li>
+                <li class="inner-list__item"><a href="#portfolio" class="inner-list__link">Реализованные проекты</a></li>
+                <li class="inner-list__item"><a href="#clients" class="inner-list__link">Наши клиенты</a></li>
+                <li class="inner-list__item"><a href="#footer" class="inner-list__link">Контакты</a></li>
+              </ul>
+            </li>
+          </ul>
           <div class="navbar__contacts wow fadeInRight" data-wow-delay="0.1s">
             <a href="tel:8800981-33-33" class="navbar__phone">8 800 891-33-33</a>
             <a href="#" class="navbar__back" onclick="ym(52937227, 'reachGoal', 'link'); return true;" id="link">Заказать обратный звонок</a>
@@ -436,7 +447,14 @@
   <div class="modal" id="modal">
     <div class="modal-dialogue">
       <button class="modal-dialogue__close" id="close">&times;</button>
-      <h4 class="modal-dialogue__title">Всплывающее окно</h4>
+      <form action="#" class="hero-form" id="modal-form">
+        <h3 class="hero-form__title">
+        Оставьте нам своё имя и номер телефона 
+        </h3>
+        <input type="text" name="username1" class="hero-form__input" placeholder="Ваше имя">
+        <input type="tel" name="phone1" class="hero-form__input phone" placeholder="Контактный телефон">
+        <button class="hero-form__button">Отправить</button>
+      </form>
     </div>
     <!-- /.modal-dialogue -->
   </div>
@@ -515,6 +533,24 @@
             email: jQuery.validator.format("Пожалуйста,введите ваш настоящий email")
           },
           phone: "Укажите ваш номер телефона"
+        }
+      });
+      $('#modal-form').validate({
+        rules: {
+          username1:{
+            required: true,
+            minlength: 2,
+            maxlength: 15
+          },
+          phone1: "required"
+        },
+        messages: {
+          username1: {
+            required: "Укажите имя",
+            minlength: jQuery.validator.format("Осталось символов: {0}"),
+            maxlength: jQuery.validator.format("Не больше 15 символов")
+          },
+          phone1: "Укажите ваш номер телефона"
         }
       });
       $('.phone').mask('+7 (999) 999-99-99')
