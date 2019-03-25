@@ -991,10 +991,9 @@ label {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #23bac1;
   border: none;
   outline: none;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .modal-dialogue__close:hover {
