@@ -209,10 +209,10 @@ label {
     text-decoration: underline !important;
   }
   .navbar__phone:hover {
-    color: #000;
+    color: #000 !important;
   }
   .contacts-phone:hover {
-    color: #fff;
+    color: #fff !important;
   }
   .contacts-back {
     outline: none;
