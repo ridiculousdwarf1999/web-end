@@ -201,9 +201,25 @@ label {
   button:hover {
     background-color: #23bac1 !important;
   }
+  .navbar__back {
+    outline: none;
+  }
   .navbar__back:hover {
     color: #23bac1 important;
     text-decoration: underline !important;
+  }
+  .navbar__phone:hover {
+    color: #000;
+  }
+  .contacts-phone:hover {
+    color: #fff;
+  }
+  .contacts-back {
+    outline: none;
+  }
+  .contacts-back:hover {
+    text-decoration: underline !important;
+    color: #23bac1 !important;
   }
   .large-block {
     background-image: url("../img/hero/hero-bg.jpg");
@@ -977,10 +993,12 @@ label {
   right: 0;
   background-color: #23bac1;
   border: none;
+  outline: none;
+  font-size: 16px;
 }
 
 .modal-dialogue__close:hover {
-  background-color: #27c7ce;
+  background-color: #86b3f9;
   cursor: pointer;
 }
 
@@ -1134,9 +1152,17 @@ label {
   cursor: pointer;
 }
 
+.arrow-left:hover {
+  background-color: #a4f9dc;
+}
+
 .arrow-right {
   margin-left: 100px;
   cursor: pointer;
+}
+
+.arrow-right:hover {
+  background-color: #a4f9dc;
 }
 
 @media (max-width: 1200px) {
@@ -1573,6 +1599,7 @@ label {
 
 .second-slider__image {
   margin: 0 35px;
+  outline: none !important;
 }
 
 .left-arrow {
@@ -1580,9 +1607,17 @@ label {
   cursor: pointer;
 }
 
+.left-arrow:hover {
+  background-color: #a4f9dc;
+}
+
 .right-arrow {
   margin-left: 45px;
   cursor: pointer;
+}
+
+.right-arrow:hover {
+  background-color: #a4f9dc;
 }
 
 .client-1 {
