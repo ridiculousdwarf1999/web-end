@@ -205,11 +205,11 @@ label {
     outline: none;
   }
   .navbar__back:hover {
-    color: #23bac1 important;
+    color: #23bac1 !important;
     text-decoration: underline !important;
   }
   .navbar__phone:hover {
-    color: #000 !important;
+    color: #fff !important;
   }
   .contacts-phone:hover {
     color: #fff !important;
